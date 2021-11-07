@@ -1,4 +1,4 @@
-# Static web page -ECNU Education Dream Building Program
+# Static web page -Education Dream Building Program
 
 ## 1. "Codes" folder includes:
 ### (1) HTML files
