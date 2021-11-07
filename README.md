@@ -29,7 +29,7 @@
 <br>
 
 ### (5) "video" folder
-#### null(because of the limitation of the uploading size)
+#### null (because of the limitation of the uploading size)
 
 <br>
 
