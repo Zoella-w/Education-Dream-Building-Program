@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>“教育筑梦”专题网站 | 工作动态</title>
+    <meta Name="keywords" Content="教育筑梦" />
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <link type="text/css" rel="stylesheet" href="css/listcolumn.css" />
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+</head>
+
+
+<body class="main">
+
+    <!-- white wrapper -->
+    <div class="wrapper">
+
+        <div class="header-nav">
+            <!-- ECNU logo and the title -->
+            <div class="header-wrapper">
+                <header>
+                    <img class="ecnu-logo" src="images/logo_ecnu.png" alt="ecnu logo" />
+                    <span class="verticle-line"></span>
+                    <h1 class="main-title">“教育筑梦”专题网站</h1>
+                </header>
+            </div>
+
+            <!-- navigation -->
+            <div class="nav-wrapper">
+                <nav>
+                    <ul>
+                        <li><a href="main.htm">首页</a></li>
+                        <li><a href="introduction.htm">项目介绍</a></li>
+                        <li><a href="https://news.ecnu.edu.cn/jyzm/25156/list.psp" target="blank">申报指南</a></li>
+                        <li><a href="listcolumn.htm">工作动态</a></li>
+                        <li><a href="contact.htm">联系我们</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="header-nav-active">
+            <!-- ECNU logo and the title -->
+            <div class="header-wrapper">
+                <header>
+                    <img class="ecnu-logo" src="images/logo_ecnu.png" alt="ecnu logo" />
+                    <span class="verticle-line"></span>
+                    <h1 class="main-title">“教育筑梦”专题网站</h1>
+                </header>
+            </div>
+
+            <!-- navigation -->
+            <div class="nav-wrapper">
+                <nav>
+                    <ul>
+                        <li><a href="main.htm">首页</a></li>
+                        <li><a href="introduction.htm">项目介绍</a></li>
+                        <li><a href="https://news.ecnu.edu.cn/jyzm/25156/list.psp" target="blank">申报指南</a></li>
+                        <li><a href="listcolumn.htm">工作动态</a></li>
+                        <li><a href="contact.htm">联系我们</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+
+            $(function () {
+
+                $(".header-nav-active").hide();
+
+                $(window).scroll(function () {
+                    // header-nav-active shows up after scrolling 160px
+                    if ($(document).scrollTop() >= 160) {
+                        $(".header-nav-active").addClass("fix-div").slideDown(400);
+                    } else {
+                        $(".header-nav-active").hide();
+                    }
+                })
+            })
+
+        </script>
+
+        <section class="left-div">
+            <div class="left-title"><span>工作动态</span></div>
+            <img class="left-img" src="images/pic_left.jpg" />
+        </section>
+
+        <h2 class="sub-nav">
+            您的位置：<a href="main.htm">首页</a>&nbsp;|&nbsp;<a href="listcolumn.htm">工作动态</a>
+        </h2>
+
+        <section class="title-list">
+            <div class="sec-title"><span>工作动态</span></div>
+            <div class="titles">
+                <ul>
+                    <li>
+                        <div class="dot"></div><a href="displayinfo.htm">光明日报 专版丨守教育初心 写卓越新篇——华东师范大学在党史学习教育中强化育人特色</a>
+                    </li>
+                    <li>
+                        <div class="dot"></div><a href="displayinfo.htm">中国教育报 专版丨华东师范大学：卓越新师范培育未来大国良师</a>
+                    </li>
+                    <li>
+                        <div class="dot"></div><a href="displayinfo.htm">关于华东师范大学“教育筑梦”计划（2022年度）的通知</a>
+                    </li>
+                    <li>
+                        <div class="dot"></div><a href="displayinfo.htm">教育筑梦，圆山村留守儿童的足球梦</a>
+                    </li>
+                    <li>
+                        <div class="dot"></div><a href="displayinfo.htm">“追光”科普进中学，远程课程精彩多</a>
+                    </li>
+                    <li>
+                        <div class="dot"></div><a href="displayinfo.htm">开讲啦！物理实验教学中心“教育筑梦”结对计划科普课程首课开播</a>
+                    </li>
+                    <li>
+                        <div class="dot"></div><a href="displayinfo.htm">光明日报 专版丨守教育初心 写卓越新篇——华东师范大学在党史学习教育中强化育人特色</a>
+                    </li>
+                    <li>
+                        <div class="dot"></div><a href="displayinfo.htm">中国教育报 专版丨华东师范大学：卓越新师范培育未来大国良师</a>
+                    </li>
+                    <li>
+                        <div class="dot"></div><a href="displayinfo.htm">关于华东师范大学“教育筑梦”计划（2022年度）的通知</a>
+                    </li>
+                    <li>
+                        <div class="dot"></div><a href="displayinfo.htm">教育筑梦，圆山村留守儿童的足球梦</a>
+                    </li>
+                </ul>
+            </div>
+
+            <script type="text/javascript">
+                $(function () {
+                    // ommit the part after 35 bytes 
+                    $(".titles a").each(function () {
+                        let str = $(this).html();
+                        let subStr = str.substring(0, 35);
+                        if (str.length > 35) {
+                            $(this).html(subStr + '...');
+                        }
+                    });
+                });
+            </script>
+        </section>
+
+        <section class="switch-btns">
+            每页 10 记录&nbsp;
+            总共 <span class="article-num">10<span> 条记录 &nbsp;
+                    <span class="first-page">首页</span> &nbsp;
+                    <span class="last-page">&lt;&lt;</span> 上一页 &nbsp;
+                    下一页 <span class="next-page">&gt;&gt;</span> &nbsp;
+                    <span class="final-page">尾页</span> &nbsp;
+                    页码 &nbsp; <span class="cur-page">1</span>/
+                    <span class="total-page">1</span> &nbsp; &nbsp;
+                    <span class="switch-to">跳转到</span> &nbsp;
+                    <input type="text" name="" oninput="value=value.replace(/[^\d]/g,'')" />
+        </section>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <a class="ecnu-home" href="https://www.ecnu.edu.cn/" target="blank">华东师范大学</a> 版权所有 | 闵行校区：东川路500号 200241 |
+        中山北路校区：中山北路3663号 200062
+        <br>
+        电话：(86-21)54344716 邮箱：ecnudreams@admin.ecnu.edu.cn
+    </footer>
+
+</body>
+
+</html>

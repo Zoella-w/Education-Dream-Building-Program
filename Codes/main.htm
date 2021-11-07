@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>“教育筑梦”专题网站 | 首页</title>
+	<meta Name="keywords" Content="教育筑梦" />
+	<link type="text/css" rel="stylesheet" href="css/style.css" />
+	<link type="text/css" rel="stylesheet" href="css/main.css" />
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+</head>
+
+
+<body class="main">
+
+	<!-- white wrapper -->
+	<div class="wrapper">
+
+		<div class="header-nav">
+			<!-- ECNU logo and the title -->
+			<div class="header-wrapper">
+				<header>
+					<img class="ecnu-logo" src="images/logo_ecnu.png" alt="ecnu logo" />
+					<span class="verticle-line"></span>
+					<h1 class="main-title">“教育筑梦”专题网站</h1>
+				</header>
+			</div>
+
+			<!-- navigation -->
+			<div class="nav-wrapper">
+				<nav>
+					<ul>
+						<li><a href="main.htm">首页</a></li>
+						<li><a href="introduction.htm">项目介绍</a></li>
+						<li><a href="https://news.ecnu.edu.cn/jyzm/25156/list.psp" target="blank">申报指南</a></li>
+						<li><a href="listcolumn.htm">工作动态</a></li>
+						<li><a href="contact.htm">联系我们</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+
+		<div class="header-nav-active">
+			<!-- ECNU logo and the title -->
+			<div class="header-wrapper">
+				<header>
+					<img class="ecnu-logo" src="images/logo_ecnu.png" alt="ecnu logo" />
+					<span class="verticle-line"></span>
+					<h1 class="main-title">“教育筑梦”专题网站</h1>
+				</header>
+			</div>
+
+			<!-- navigation -->
+			<div class="nav-wrapper">
+				<nav>
+					<ul>
+						<li><a href="main.htm">首页</a></li>
+						<li><a href="introduction.htm">项目介绍</a></li>
+						<li><a href="https://news.ecnu.edu.cn/jyzm/25156/list.psp" target="blank">申报指南</a></li>
+						<li><a href="listcolumn.htm">工作动态</a></li>
+						<li><a href="contact.htm">联系我们</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+
+			$(function () {
+
+				$(".header-nav-active").hide();
+
+				$(window).scroll(function () {
+					// header-nav-active shows up after scrolling 160px
+					if ($(document).scrollTop() >= 160) {
+						$(".header-nav-active").addClass("fix-div").slideDown(400);
+					} else {
+						$(".header-nav-active").hide();
+					}
+				})
+			})
+
+		</script>
+
+		<!-- videos -->
+		<section class="video">
+			<div class="video-wrapper">
+				<img class="last-video" src="images/ico_last1.png" alt="上一个视频" />
+
+				<div class="video-container">
+					<video id="video" controls="controls" autoplay muted>
+						您的浏览器不支持video标签，请使用IE8以上版本的浏览器查看。
+					</video>
+				</div>
+
+				<img class="next-video" src="images/ico_next1.png" alt="下一个视频" />
+
+				<script type="text/javascript">
+
+					$(function () {
+
+						var video_list = ['videos/video1.mp4', 'videos/video2.mp4', 'videos/video3.mp4', 'videos/video4.mp4', 'videos/video5.mp4'];
+						var video_len = video_list.length;	// the length of video_list					
+						var cur1 = 0;	// current video
+						var video = document.getElementById('video');
+
+						// if a video ends, play the next
+						video.addEventListener('ended', playNext);
+						playNext();
+
+						function playNext() {
+							video.src = video_list[cur1];
+							// the video is short, so plays it after loading
+							video.load();
+							video.play();
+							cur1++;
+							if (cur1 >= video_len) {
+								// the 1st video plays after the final video ends
+								cur1 = 0;
+							}
+						}
+
+						function playLast() {
+							// if cur1 = 0, it's actually the final video 
+							if (!cur1) {
+								cur1 = 5;
+							}
+							if (cur1 > 1) {
+								cur1--;
+								video.src = video_list[cur1 - 1];
+								// the video is short, so plays it after loading
+								video.load();
+								video.play();
+							}
+						}
+
+						// btns to switch the next or last video
+						$(".next-video").click(function () {
+							playNext();
+						});
+
+						$(".last-video").click(function () {
+							playLast();
+						})
+					});
+
+				</script>
+
+			</div>
+			<div class="video-title"><a href="displayinfo.htm">“教育筑梦”计划开幕式</a></div>
+			<hr id="video-bottom" color="#B6BFD9">
+
+			<script type="text/javascript">
+
+				$(function () {
+
+					//  the style of icons changes with mouse movement
+					$('.last-video').hover(function () {
+						$(this).attr('src', 'images/ico_last2.png');
+					});
+
+					$('.next-video').hover(function () {
+						$(this).attr('src', 'images/ico_next2.png');
+					});
+
+					$('.last-video').mouseout(function () {
+						$(this).attr('src', 'images/ico_last1.png');
+					});
+
+					$('.next-video').mouseout(function () {
+						$(this).attr('src', 'images/ico_next1.png');
+					});
+				});
+
+			</script>
+
+		</section>
+
+		<h2 class="sub-title"><a href="listcolumn.htm">工作动态</a></h2>
+
+		<!-- carousel imgs and articles -->
+		<section class="content">
+
+			<!-- carousel imgs -->
+			<div class="img-wrapper">
+				<div class="img-list">
+					<ul>
+						<li style="z-index: 0.5;"><a><img src="images/img_list1.jpg" /></a></li>
+						<li><a><img src="images/img_list2.jpg" /></a></li>
+						<li><a><img src="images/img_list3.jpg" /></a></li>
+						<li><a><img src="images/img_list4.jpg" /></a></li>
+						<li><a><img src="images/img_list5.jpg" /></a></li>
+					</ul>
+				</div>
+				<div class="img-title">
+					<ul>
+						<li style="z-index: 0.5;"><a href="displayinfo.htm">关于华东师范大学“教育筑梦”计划的通知</a></li>
+						<li><a href="displayinfo.htm">“教育筑梦”助力乡村振兴</a></li>
+						<li><a href="displayinfo.htm">卓越新师范培育未来大国良师</a></li>
+						<li><a href="displayinfo.htm">教育筑梦，圆山村留守儿童的足球梦</a></li>
+						<li><a href="displayinfo.htm">“追光”科普进中学，远程课程精彩多</a></li>
+					</ul>
+				</div>
+
+				<script type="text/javascript">
+
+					$(function () {
+						// ommit the part after 25 bytes 
+						$(".img-title a").each(function () {
+							let str = $(this).html();
+							let subStr = str.substring(0, 25);
+							if (str.length > 25) {
+								$(this).html(subStr + '...');
+							}
+						});
+					});
+
+				</script>
+
+				<div class="img-number">
+					<a class="cur" href="javascript:;">1</a>
+					<a href="javascript:;">2</a>
+					<a href="javascript:;">3</a>
+					<a href="javascript:;">4</a>
+					<a href="javascript:;">5</a>
+				</div>
+
+				<script type="text/javascript">
+
+					$(function () {
+
+						//	switch imgs and its title according to the index
+						function switchImg(index) {
+							$('.img-list li').eq(index).fadeIn().siblings().fadeOut();
+							$('.img-title li').eq(index).fadeIn().siblings().fadeOut();
+							$('.img-number a').eq(index).addClass('cur').siblings().removeClass('cur');
+						}
+
+						var cur2 = 0;	//	current img
+						switchImg(cur2);
+						var timer = null;
+
+						// automatically play
+						function imgAutoPlay() {
+							timer = setInterval(function () {
+								switchImg((++cur2) % 5);
+							}, 3000);
+						}
+
+						imgAutoPlay();
+
+						// switch imgs after click a number btn
+						$('.img-number a').click(function () {
+							clearInterval(timer);
+							cur2 = $(this).index();
+							switchImg(cur2);
+							imgAutoPlay();
+						});
+					});
+
+				</script>
+
+			</div>
+
+			<!-- articles -->
+			<div class="article-wrapper">
+				<div class="article 1">
+					<h3><a href="displayinfo.htm">光明日报 专版丨守教育初心 写卓越新篇</a></h3>
+					<p><a href="displayinfo.htm">“大象长长的鼻子正昂扬，全世界都举起了希望……老鹰带着我们飞翔，更高更远需要梦想……”在湖南省株洲市醴陵市大林村佛年学校，
+							46名学生围绕在华东师范大学音乐学院教师谭雅如的身旁，学习这首名为《快乐天堂》的歌曲，歌声温情而有力。</p>
+				</div>
+				<div class="article 2">
+					<h3><a href="displayinfo.htm">中国教育报 专版丨华东师范大学</a></h3>
+					<p><a href="displayinfo.htm">华东师范大学（以下简称“华东师大”）“生命·实践”教育学研究团队是首批“全国高校黄大年式教师团队”中仅有的来自教育学科的团队。
+							自1994年以来，在叶澜教授和李政涛教授的带领下，团队致力于中国基础教育改革与发展，深入全国中小学开展学校教育变革研究，创生了一套教育理论、
+							一批转型学校、一条变革之路、一种研究机制和一支研究队伍，探索形成了学校变革的“中国经验”。</a></p>
+				</div>
+
+				<script type="text/javascript">
+
+					$(function () {
+
+						// ommit the part after 35 bytes 
+						$(".article h3 a").each(function () {
+							let str = $(this).html();
+							let subStr = str.substring(0, 35);
+							if (str.length > 35) {
+								$(this).html(subStr + '...');
+							}
+						});
+
+						// ommit the part after 110 bytes 
+						$(".article p a").each(function () {
+							let str = $(this).html();
+							let subStr = str.substring(0, 110);
+							if (str.length > 110) {
+								$(this).html(subStr + '...');
+							}
+						});
+					});
+
+				</script>
+
+			</div>
+
+			<div class="more">
+				<a href="listcolumn.htm">更多...</a>
+			</div>
+
+		</section>
+
+		<!-- bg at the end of the page -->
+		<img class="latter-bg" src="images/pic_end.png" alt="latter background" />
+	</div>
+
+	<!-- footer -->
+	<footer>
+		<a class="ecnu-home" href="https://www.ecnu.edu.cn/" target="blank">华东师范大学</a> 版权所有 | 闵行校区：东川路500号 200241 |
+		中山北路校区：中山北路3663号 200062
+		<br>
+		电话：(86-21)54344716 邮箱：ecnudreams@admin.ecnu.edu.cn
+	</footer>
+
+</body>
+
+</html>

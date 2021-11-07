@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>“教育筑梦”专题网站 | 联系我们</title>
+    <meta Name="keywords" Content="教育筑梦" />
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <link type="text/css" rel="stylesheet" href="css/displayinfo.css" />
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+</head>
+
+
+<body class="main">
+
+    <!-- white wrapper -->
+    <div class="wrapper">
+
+        <div class="header-nav">
+            <!-- ECNU logo and the title -->
+            <div class="header-wrapper">
+                <header>
+                    <img class="ecnu-logo" src="images/logo_ecnu.png" alt="ecnu logo" />
+                    <span class="verticle-line"></span>
+                    <h1 class="main-title">“教育筑梦”专题网站</h1>
+                </header>
+            </div>
+
+            <!-- navigation -->
+            <div class="nav-wrapper">
+                <nav>
+                    <ul>
+                        <li><a href="main.htm">首页</a></li>
+                        <li><a href="introduction.htm">项目介绍</a></li>
+                        <li><a href="https://news.ecnu.edu.cn/jyzm/25156/list.psp" target="blank">申报指南</a></li>
+                        <li><a href="listcolumn.htm">工作动态</a></li>
+                        <li><a href="contact.htm">联系我们</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="header-nav-active">
+            <!-- ECNU logo and the title -->
+            <div class="header-wrapper">
+                <header>
+                    <img class="ecnu-logo" src="images/logo_ecnu.png" alt="ecnu logo" />
+                    <span class="verticle-line"></span>
+                    <h1 class="main-title">“教育筑梦”专题网站</h1>
+                </header>
+            </div>
+
+            <!-- navigation -->
+            <div class="nav-wrapper">
+                <nav>
+                    <ul>
+                        <li><a href="main.htm">首页</a></li>
+                        <li><a href="introduction.htm">项目介绍</a></li>
+                        <li><a href="https://news.ecnu.edu.cn/jyzm/25156/list.psp" target="blank">申报指南</a></li>
+                        <li><a href="listcolumn.htm">工作动态</a></li>
+                        <li><a href="contact.htm">联系我们</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+
+            $(function () {
+
+                $(".header-nav-active").hide();
+
+                $(window).scroll(function () {
+                    // header-nav-active shows up after scrolling 160px
+                    if ($(document).scrollTop() >= 160) {
+                        $(".header-nav-active").addClass("fix-div").slideDown(400);
+                    } else {
+                        $(".header-nav-active").hide();
+                    }
+                })
+            })
+
+        </script>
+
+        <h2 class="sub-nav">
+            <span>
+                <b>您的位置：</b><a href="main.htm">首页</a>&nbsp;&nbsp;<a href="contact.htm">联系我们</a>
+            </span>
+        </h2>
+
+        <section class="article">
+            <h3 class="article-title">
+                联系我们
+            </h3>
+            <div style="width: 400px; margin-top:50px; margin-left: 300px; text-align: left;">
+                <p><b>联系电话：</b>021-54344716</p> <br>
+                <p><b>联系邮箱：</b>ecnudreams@admin.ecnu.edu.cn</p> <br>
+                <p><b>地址：</b>上海市闵行区东川路500号</p>
+            </div>
+            <div style="height: 80px"></div>
+        </section>
+
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <a class="ecnu-home" href="https://www.ecnu.edu.cn/" target="blank">华东师范大学</a> 版权所有 | 闵行校区：东川路500号 200241 |
+        中山北路校区：中山北路3663号 200062
+        <br>
+        电话：(86-21)54344716 邮箱：ecnudreams@admin.ecnu.edu.cn
+    </footer>
+
+</body>
+
+</html>

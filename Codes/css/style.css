@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Microsoft YaHei", 微软雅黑;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+li {
+  list-style-type: none;
+}
+
+p {
+  text-indent: 2em;
+}
+
+.main {
+  background-color: #ecf7fc;
+}
+
+.wrapper {
+  width: 1028px;
+  margin: 0 auto;
+  margin-top: 29px;
+  background-color: #fff;
+  box-shadow: 0px 0px 18px rgb(29 54 136 / 60%);
+  border-radius: 10px;
+}
+
+.header-wrapper {
+  position: relative;
+  height: 100px;
+  background-color: #1d3688;
+  border-bottom: 1px solid #b6bfd9;
+  border-radius: 10px 10px 0 0;
+}
+
+header {
+  position: absolute;
+  width: 928px;
+  height: 65px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+.ecnu-logo {
+  display: inline-block;
+  height: 60px;
+  vertical-align: middle;
+}
+
+.verticle-line {
+  display: inline-block;
+  border-left: 1px solid #fff;
+  margin-left: 15px;
+  vertical-align: middle;
+  height: 50px;
+}
+
+.main-title {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 32px;
+  font-weight: 520;
+  color: #fff;
+}
+
+.nav-wrapper {
+  position: relative;
+  height: 27px;
+  background-color: #f8f8f8;
+  border-radius: 0 0 10px 10px;
+  border-bottom: 1px solid #1d3688;
+}
+
+.nav-wrapper active {
+  height: 27px;
+  background-color: #f8f8f8;
+  border-radius: 0 0 10px 10px;
+  border-bottom: 1px solid #1d3688;
+}
+
+.header-nav-active {
+  width: 1028px;
+  z-index: 1;
+}
+
+.fix-div {
+  position: fixed;
+  top: 0;
+}
+
+nav {
+  position: absolute;
+  width: 820px;
+  height: 25px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+.nav-wrapper ul::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.nav-wrapper li {
+  float: left;
+  width: 160px;
+  text-align: center;
+  border-left: 1px solid #1d3688;
+}
+
+.nav-wrapper li:last-child {
+  border-right: 1px solid #1d3688;
+}
+
+.nav-wrapper a {
+  color: #444;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.nav-wrapper a:hover {
+  color: #dc851f;
+}
+
+footer {
+  width: 1028px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  font-size: 14px;
+  color: #616161;
+}
+
+.ecnu-home {
+  color: #616161;
+  cursor: pointer;
+}
+
+.ecnu-home:hover {
+  color: #dc851f;
+}

@@ -1,0 +1,49 @@
+.sub-nav {
+  width: 1028px;
+  height: 56px;
+  border-bottom: 1px solid #b6bfd9;
+}
+
+.sub-nav span {
+  display: inline-block;
+  margin-top: 18px;
+  margin-left: 50px;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.sub-nav a:hover {
+  color: #dc851f;
+}
+
+.article {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.article-title {
+  display: inline-block;
+  color: #1d3688;
+  font-size: 32px;
+  margin: 0 60px;
+}
+
+.date {
+    display: inline-block;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.article-content {
+  text-align: left;
+  margin: 30px 120px 40px 120px;
+}
+
+.article-content p {
+  display: inline-block;
+  line-height: 30px;
+  text-align: justify;
+  text-justify: inter-ideograph;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
