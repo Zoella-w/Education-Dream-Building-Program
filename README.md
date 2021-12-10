@@ -1,5 +1,9 @@
 # Static web page -Education Dream Building Program
 
+This is the finished product:
+**https://news.ecnu.edu.cn/jyzm/**
+华东师范大学“教育筑梦”专题网站
+
 ## 1. "Codes" folder includes:
 ### (1) HTML files
 #### a) main.htm: the home page
