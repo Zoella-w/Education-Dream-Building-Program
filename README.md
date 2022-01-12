@@ -44,5 +44,5 @@ This is the finished product:
 <br>
 
 #### Here is the screenshot of the home page:
-![缩略图](https://user-images.githubusercontent.com/80202290/140639813-ffca87e3-f773-4fa0-a2d9-0aed01ac8e6a.jpg)
+![image](https://user-images.githubusercontent.com/80202290/149159717-27fe5f72-6bb5-48c9-bf16-4972d05bcb2a.png)
 
